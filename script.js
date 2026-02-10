@@ -1,15 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     
+    // --- HAMBURGER MENU ---
     const burger = document.querySelector('.hamburger');
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
-    const textSpan = document.querySelector(".type-text");
     
-    const phrases = ["Machine Learning", "Data Visualization", "Statistics"];
-    let phraseIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-
     if (burger) {
         burger.addEventListener('click', () => {
             nav.classList.toggle('nav-active');
@@ -24,6 +19,13 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     }
+
+    // --- TYPING EFFECT ---
+    const textSpan = document.querySelector(".type-text");
+    const phrases = ["Machine Learning", "Data Visualization", "Statistics"];
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
 
     function type() {
         const currentPhrase = phrases[phraseIndex];
@@ -49,4 +51,43 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     
     if (textSpan) setTimeout(type, 1000);
+
+    // --- SCROLL REVEAL ANIMATION ---
+    const observerOptions = {
+        threshold: 0.1, 
+        rootMargin: "0px 0px -50px 0px"
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target); 
+            }
+        });
+    }, observerOptions);
+
+    const revealElements = document.querySelectorAll('.reveal');
+    revealElements.forEach(el => observer.observe(el));
+
+
+    // --- FIX FOR HOME BUTTON (New Code) ---
+    // This forces the page to scroll to the very top (0px) when Home is clicked
+    const homeLink = document.querySelector('a[href="#home"]');
+    if (homeLink) {
+        homeLink.addEventListener('click', function(e) {
+            e.preventDefault(); // Stop the default anchor jump
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+            
+            // Close mobile menu if open
+            if (nav.classList.contains('nav-active')) {
+                nav.classList.remove('nav-active');
+                burger.classList.remove('toggle');
+            }
+        });
+    }
+
 });
