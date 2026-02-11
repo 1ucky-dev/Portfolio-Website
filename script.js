@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let charIndex = 0;
     let isDeleting = false;
 
+    // --- Form Handling ---
     if (form) {
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
@@ -48,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    // --- Hamburger Logic ---
     function toggleMenu() {
         nav.classList.toggle('nav-active');
         burger.classList.toggle('toggle');
@@ -75,6 +77,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.addEventListener('click', (event) => {
+        // Only run if nav and burger exist to prevent console errors
+        if (!nav || !burger) return;
+        
         const isMenuOpen = nav.classList.contains('nav-active');
         const clickedInsideMenu = nav.contains(event.target);
         const clickedBurger = burger.contains(event.target);
@@ -84,6 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    // --- Typing Effect ---
     function type() {
         if (!textSpan) return;
         const currentPhrase = phrases[phraseIndex];
@@ -110,6 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (textSpan) setTimeout(type, 1000);
 
+    // --- Scroll Reveal ---
     const observerOptions = {
         threshold: 0.1,
         rootMargin: "0px 0px -50px 0px"
@@ -126,6 +133,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     revealElements.forEach(el => observer.observe(el));
 
+    // --- Smooth Scroll for Home ---
     if (homeLink) {
         homeLink.addEventListener('click', function(e) {
             e.preventDefault();

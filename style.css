@@ -32,9 +32,9 @@ button,
 .social-item,
 input,
 textarea {
-    -webkit-user-select: auto;
-    -ms-user-select: auto;
-    user-select: auto;
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
 }
 
 .logo {
@@ -476,10 +476,11 @@ textarea {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 60%;
+        width: 60% !important;
         transform: translateX(100%);
         transition: transform 0.5s ease-in-out;
         z-index: 1500;
+       
     }
     .nav-links.nav-active {
         transform: translateX(0%);
