@@ -41,6 +41,20 @@
             <div class="bar-handle"></div>
         </div>
 
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h2 class="reveal">System.About()</h2>
+                        <p class="reveal">I am focused on the development of Machine Learning models and the architectural side of Data Visualization. My work centers on building clean, functional systems that extract meaning from complex datasets. Currently, I am deepening my expertise in Python and SQL, while building a portfolio of projects that demonstrate practical applications of predictive modeling.</p>
+                    </div>
+                    <div class="about-image-wrapper reveal">
+                        <img src="img.png" alt="Illustration" class="hero-illustration">
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="projects" class="projects-section">
             <div class="projects-container">
                 <h2 class="section-title reveal">System.Projects()</h2>
@@ -88,7 +102,7 @@
                         </div>
                     </div>
 
-                     <div class="project-card reveal">
+                    <div class="project-card reveal">
                         <div class="card-top">
                             <div class="folder-icon">📁 project4.txt</div>
                         </div>
@@ -102,7 +116,7 @@
                         </div>
                     </div>
 
-                     <div class="project-card reveal">
+                    <div class="project-card reveal">
                         <div class="card-top">
                             <div class="folder-icon">📁 project5.txt</div>
                         </div>
@@ -116,7 +130,7 @@
                         </div>
                     </div>
 
-                     <div class="project-card reveal">
+                    <div class="project-card reveal">
                         <div class="card-top">
                             <div class="folder-icon">📁 project6.txt</div>
                         </div>
@@ -128,26 +142,6 @@
                                 <span>Tool</span>
                             </div>
                         </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="about-section">
-            <div class="about-container">
-                <div class="about-grid">
-                    <div class="about-image-wrapper reveal">
-                        <img src="abc2.png" alt="Illustration" class="hero-illustration">
-                    </div>
-
-                    <div class="about-text">
-                        <h2 class="reveal">System.About()</h2>
-                        
-                        <p class="reveal"><strong>Full-Stack Architecture:</strong> Building end-to-end applications with a focus on modular, maintainable codebases.</p>
-                        <p class="reveal"><strong>Performance Optimization:</strong> Obsessed with sub-second load times and efficient resource management.</p>
-                        <p class="reveal"><strong>UX/UI Engineering:</strong> Bridging the gap between complex backend logic and intuitive, brutalist front-end design.</p>
-                        <p class="reveal"><strong>Rapid Prototyping:</strong> Transforming abstract concepts into functional, interactive MVPs at high velocity.</p>
                     </div>
                 </div>
             </div>
@@ -171,30 +165,33 @@
                         <div class="contact-grid">
                             <div class="contact-sidebar">
                                 <div class="status-msg"></div>
-                                <p class="sidebar-text">Available for freelance, full-stack collaborations, or technical consultations. <br><br> Response time: < 24hrs.</p>
+                                <p class="sidebar-text">Available for freelance, full-stack collaborations, or technical consultations. <br><br> Response time: &lt; 24hrs.</p>
                                 
                                 <div class="social-terminal">
-                                    <a href="#" class="social-item"><i class="fab fa-github"></i> github.exe</a>
-                                    <a href="#" class="social-item"><i class="fab fa-linkedin"></i> linkedin.sh</a>
-                                    <a href="#" class="social-item"><i class="fab fa-twitter"></i> twitter.log</a>
+                                    <a href="https://github.com/b-sulav" target="_blank" rel="noopener noreferrer" class="social-item"><i class="fab fa-github"></i> github.exe</a>
+                                    <a href="https://www.linkedin.com/in/sulav-bhatta-4a0676298/" target="_blank" rel="noopener noreferrer" class="social-item"><i class="fab fa-linkedin"></i> linkedin.sh</a>
+                                    <a href="https://www.instagram.com/sulav.tmp?igsh=MWR5cG00ajNpbTgxNw==" target="_blank" rel="noopener noreferrer" class="social-item"><i class="fab fa-instagram"></i> instagram.log</a>
                                 </div>
                             </div>
 
-                            <form class="contact-form">
+                            <form class="contact-form" id="contact-form" action="https://formspree.io/f/xvzbzddq" method="POST">
                                 <div class="input-line">
                                     <label for="name">USER_NAME:</label>
-                                    <input type="text" id="name" name="name" placeholder="..." required>
+                                    <input type="text" id="name" name="name" placeholder="....." required>
                                 </div>
                                 <div class="input-line">
                                     <label for="email">USER_EMAIL:</label>
-                                    <input type="email" id="email" name="email" placeholder="..." required>
+                                    <input type="email" id="email" name="email" placeholder="....." required>
                                 </div>
                                 <div class="input-line">
                                     <label for="message">MESSAGE:</label>
-                                    <textarea id="message" name="message" rows="4" placeholder="Type your transmission here..."></textarea>
+                                    <textarea id="message" name="message" rows="2" placeholder="Type your transmission here..." required></textarea>
                                 </div>
-                                <button type="submit" class="execute-btn">
-                                    <span class="btn-text">Execute</span>
+                                
+                                <div id="terminal-output" style="font-family: var(--font-mono); font-size: 0.9rem; margin: 15px 0; min-height: 1.2rem;"></div>
+
+                                <button type="submit" class="execute-btn" id="submit-btn">
+                                    <span class="btn-text">Send</span>
                                     <span class="btn-cursor"></span>
                                 </button>
                             </form>
