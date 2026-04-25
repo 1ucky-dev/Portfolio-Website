@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio | Sulav Bhatta</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
 
+<body>
+    <canvas id="bg-matrix-canvas"></canvas>
     <nav class="navbar">
-        <div class="logo"></span></div>
+        <div class="scroll-progress-bar"></div>
+        <div class="logo"><span class="accent">D</span>S</div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#projects">Project</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-
 
         <div class="hamburger">
             <div class="line"></div>
@@ -26,195 +28,305 @@
         </div>
     </nav>
 
-
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 id="heroo">Sulav Bhatta</h1>
+            <h1 id="heroo">Sulav<span class="accent">.</span>Bhatta</h1>
             <div class="typing-container">
-                <span class="prompt">&gt;</span> <span class="type-text"></span>
+                <span class="prompt">&gt; </span><span class="type-text"></span>
+            </div>
+        </div>
+        <div class="hero-action">
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <h2 class="section-title reveal">About()</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <div class="about-bullets-grid reveal">
+                        <div class="bullet-card">
+                            <h3 class="bullet-topic">Building</h3>
+                            <p class="bullet-desc">Clean, scalable systems for complex data extraction.</p>
+                        </div>
+                        <div class="bullet-card">
+                            <h3 class="bullet-topic">Specializing</h3>
+                            <p class="bullet-desc">Predictive modeling and data visualization.</p>
+                        </div>
+                        <div class="bullet-card">
+                            <h3 class="bullet-topic">Stack</h3>
+                            <p class="bullet-desc">Python, SQL, and the architectural side of ML.</p>
+                        </div>
+                        <div class="bullet-card">
+                            <h3 class="bullet-topic">Objective</h3>
+                            <p class="bullet-desc">Turning complex datasets into functional intelligence.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image-wrapper reveal">
+                    <img src="img.png" alt="Illustration" class="hero-illustration">
+                </div>
             </div>
         </div>
     </section>
-    <div class="main-window">
-        <div class="window-bar">
+    <section id="projects" class="projects-section">
+        <div class="projects-container">
+            <h2 class="section-title reveal">Projects()</h2>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <div class="folder-icon">&gt;_</div>
+                        <div class="project-links">
+                            <a href="https://github.com/b-sulav/Game.git" class="project-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Astro-Dodge</h3>
+                        <p>It is a fast-paced survival game that tests your quick reactions and strategic thinking.
+                            Pilot an advanced, nimble spacecraft through an infinite asteroid field, aiming to stay
+                            alive as long as possible to accumulate high scores.</p>
+                        <div class="tech-stack">
+                            <span>Java</span>
+                            <span>Processing</span>
+                            <span>JSON
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <div class="folder-icon">&gt;_</div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Predictive Modeling System</h3>
+                        <p>Implemented machine learning algorithms to predict future trends based on historical data
+                            patterns, optimizing strategic planning.</p>
+                        <div class="tech-stack">
+                            <span>Scikit-Learn</span>
+                            <span>Pandas</span>
+                            <span>NumPy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <div class="folder-icon">&gt;_</div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Interactive Data Dashboards</h3>
+                        <p>Developed dynamic visualizations transforming raw numbers into clear, actionable business
+                            intelligence interfaces.</p>
+                        <div class="tech-stack">
+                            <span>React</span>
+                            <span>D3.js</span>
+                            <span>FastAPI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <div class="folder-icon">&gt;_</div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Sentiment Analysis Engine</h3>
+                        <p>A natural language processing system that analyzes social media feeds to gauge public
+                            sentiment on specific topics in real-time.</p>
+                        <div class="tech-stack">
+                            <span>NLP</span>
+                            <span>PyTorch</span>
+                            <span>Transformers</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <div class="folder-icon">&gt;_</div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Fraud Detection System</h3>
+                        <p>Anomaly detection model using deep learning to identify suspicious financial transactions
+                            with high precision and low latency.</p>
+                        <div class="tech-stack">
+                            <span>Keras</span>
+                            <span>TensorFlow</span>
+                            <span>BigQuery</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <div class="folder-icon">&gt;_</div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Recommendation Engine</h3>
+                        <p>Personalized content recommendation system using collaborative filtering and user behavior
+                            analysis for enhanced engagement.</p>
+                        <div class="tech-stack">
+                            <span>Scikit-Learn</span>
+                            <span>Spark</span>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <section id="about" class="about-section">
-            <div class="about-container">
-                <div class="about-grid">
-                    <div class="about-text">
-                        <h2 class="reveal">About()</h2>
-                        <p class="reveal">
-My background is rooted in a fascination for how raw data can be transformed into clear, actionable narratives. 
-It began as a curiosity for analysis has evolved into a career focused on the architectural side of Data Science, 
-building the robust systems that allow Machine Learning models to thrive.
-<br>
-<br>
-<b>Building:</b> Clean, scalable systems for complex data extraction.
-<br>
-<b>Specializing:</b> Predictive modeling and data visualization.
-<br>
-<b>Stack:</b> Python, SQL, and the architectural side of ML.
-<br>
-Turning complex datasets into functional intelligence.</p>
-                    </div>
-                    <div class="about-image-wrapper reveal">
-                        <img src="img.png" alt="Illustration" class="hero-illustration">
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2 class="section-title reveal">Contact()</h2>
 
-        <section id="projects" class="projects-section">
-            <div class="projects-container">
-                <h2 class="section-title reveal">Projects()</h2>
-                
-                <div class="projects-grid">
-                    <div class="project-card reveal">
-                        <div class="card-top">
-                            <div class="folder-icon">📁 project1.txt</div>
-                        </div>
-                        <div class="card-content">
-                            <h3>Project 1</h3>
-                            <p>Description.</p>
-                            <div class="tech-stack">
-                                <span>Tool</span>
-                                <span>Tool</span>
-                            </div>
-                        </div>
+            <div class="contact-wrapper">
+                <!-- Info Card -->
+                <div class="contact-card info-card reveal">
+                    <div class="card-header">
+                        <h3>Availability</h3>
                     </div>
+                    <div class="card-body">
+                        <p class="availability-text">Open for freelance projects, machine learning collaborations, or
+                            full-stack development roles.</p>
 
-                    <div class="project-card reveal">
-                        <div class="card-top">
-                            <div class="folder-icon">📁 project2.txt</div>
-                        </div>
-                        <div class="card-content">
-                            <h3>Project 2</h3>
-                            <p>Description.</p>
-                            <div class="tech-stack">
-                                <span>Tool</span>
-                                <span>Tool</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card reveal">
-                        <div class="card-top">
-                            <div class="folder-icon">📁 project3.txt</div>
-                        </div>
-                        <div class="card-content">
-                            <h3>Project 3</h3>
-                            <p>Description.</p>
-                            <div class="tech-stack">
-                                <span>Tool</span>
-                                <span>Tool</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card reveal">
-                        <div class="card-top">
-                            <div class="folder-icon">📁 project4.txt</div>
-                        </div>
-                        <div class="card-content">
-                            <h3>Project 4</h3>
-                            <p>Description.</p>
-                            <div class="tech-stack">
-                                <span>Tool</span>
-                                <span>Tool</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card reveal">
-                        <div class="card-top">
-                            <div class="folder-icon">📁 project5.txt</div>
-                        </div>
-                        <div class="card-content">
-                            <h3>Project 5</h3>
-                            <p>Description.</p>
-                            <div class="tech-stack">
-                                <span>Tool</span>
-                                <span>Tool</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card reveal">
-                        <div class="card-top">
-                            <div class="folder-icon">📁 project6.txt</div>
-                        </div>
-                        <div class="card-content">
-                            <h3>Project 6</h3>
-                            <p>Description.</p>
-                            <div class="tech-stack">
-                                <span>Tool</span>
-                                <span>Tool</span>
-                            </div>
+                        <div class="social-links-grid">
+                            <a href="https://github.com/b-sulav" target="_blank" rel="noopener noreferrer"
+                                class="social-link-card">
+                                <i class="fab fa-github"></i>
+                                <span>github.exe</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/sulav-bhatta-4a0676298/" target="_blank"
+                                rel="noopener noreferrer" class="social-link-card">
+                                <i class="fab fa-linkedin"></i>
+                                <span>linkedin.sh</span>
+                            </a>
+                            <a href="https://www.instagram.com/sulav.tmp?igsh=MWR5cG00ajNpbTgxNw==" target="_blank"
+                                rel="noopener noreferrer" class="social-link-card">
+                                <i class="fab fa-instagram"></i>
+                                <span>instagram.log</span>
+                            </a>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bhatta.sulav2005@gmail.com"
+                                target="_blank" rel="noopener noreferrer" class="social-link-card">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                    style="margin-right: 0px;">
+                                    <rect width="24" height="24" rx="5" fill="var(--accent-color)" />
+                                    <path d="M20 18h-2V9.5l-6 4.5-6-4.5V18H4V6h1.75l6.25 4.63L18.25 6H20v12z"
+                                        fill="black" />
+                                </svg>
+                                <span>gmail.com</span>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section id="contact" class="contact-section">
-            <div class="contact-container">
-                <h2 class="section-title reveal">Contact()</h2>
-                
-                <div class="terminal-window reveal">
-                    <div class="terminal-header">
-                        <div class="terminal-buttons">
-                            <span class="dot red"></span>
-                            <span class="dot yellow"></span>
-                            <span class="dot green"></span>
-                        </div>
-                        <div class="terminal-title">bash — sulav@portfolio</div>
+                <!-- Form Card -->
+                <div class="contact-card form-card reveal">
+                    <div class="card-header">
+                        <h3>Transmission</h3>
                     </div>
-
-                    <div class="terminal-body">
-                        <div class="contact-grid">
-                            <div class="contact-sidebar">
-                                <div class="status-msg"></div>
-                                <p class="sidebar-text">Available for freelance, full-stack collaborations, or technical consultations. <br><br> Response time: &lt; 24hrs.</p>
-                                
-                                <div class="social-terminal">
-                                    <a href="https://github.com/b-sulav" target="_blank" rel="noopener noreferrer" class="social-item"><i class="fab fa-github"></i> github.exe</a>
-                                    <a href="https://www.linkedin.com/in/sulav-bhatta-4a0676298/" target="_blank" rel="noopener noreferrer" class="social-item"><i class="fab fa-linkedin"></i> linkedin.sh</a>
-                                    <a href="https://www.instagram.com/sulav.tmp?igsh=MWR5cG00ajNpbTgxNw==" target="_blank" rel="noopener noreferrer" class="social-item"><i class="fab fa-instagram"></i> instagram.log</a>
-                                </div>
+                    <div class="card-body">
+                        <form class="contact-form" id="contact-form" action="https://formspree.io/f/xvzbzddq"
+                            method="POST">
+                            <div class="input-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
                             </div>
-
-                            <form class="contact-form" id="contact-form" action="https://formspree.io/f/xvzbzddq" method="POST">
-                                <div class="input-line">
-                                    <label for="name">USER_NAME:</label>
-                                    <input type="text" id="name" name="name" placeholder="....." required>
-                                </div>
-                                <div class="input-line">
-                                    <label for="email">USER_EMAIL:</label>
-                                    <input type="email" id="email" name="email" placeholder="....." required>
-                                </div>
-                                <div class="input-line">
-                                    <label for="message">MESSAGE:</label>
-                                    <textarea id="message" name="message" rows="2" placeholder="Type your transmission here..." required></textarea>
-                                </div>
-                                
-                                <div id="terminal-output" style="font-family: var(--font-mono); font-size: 0.9rem; margin: 15px 0; min-height: 1.2rem;"></div>
-
-                                <button type="submit" class="execute-btn" id="submit-btn">
-                                    <span class="btn-text">Send</span>
-                                    <span class="btn-cursor"></span>
-                                </button>
-                            </form>
-                        </div>
+                            <div class="input-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <span class="btn-text">Send</span>
+                            </button>
+                            <div id="terminal-output" class="form-status"></div>
+                        </form>
                     </div>
                 </div>
             </div>
-        </section>
-        
-        <footer style="text-align: center; padding: 20px; color: #666; font-family: var(--font-mono); font-size: 0.8rem;">
-            &copy; 2026 Sulav Bhatta. All Systems Operational.
-        </footer>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 20px; color: #666; font-family: var(--font-mono); font-size: 0.8rem;">
+        &copy; 2026 Sulav Bhatta. All Systems Operational.
+    </footer>
+
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
